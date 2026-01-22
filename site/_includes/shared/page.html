@@ -1,0 +1,71 @@
+{% if include.content_blocks.size > 0 %}
+<div class="c-page">
+
+{% for block in include.content_blocks %}
+  {% case block._bookshop_name %}
+    {% when "hero" %}
+      {% include components/hero.html
+        title=block.title
+        description_html=block.description_html
+        cta_button=block.cta_button
+        cta_button_link=block.cta_button_link
+        works_button=block.works_button
+        works_button_link=block.works_button_link
+        image=block.image
+        image_alt=block.image_alt
+      %}
+    {% when "projects-section" %}
+      {% include components/projects-section.html
+        title=block.title
+        description_html=block.description_html
+        link_url=block.link_url
+        show_projects=block.show_projects
+      %}
+    {% when "testimonials-section" %}
+      {% include components/testimonials-section.html
+        title=block.title
+        description_html=block.description_html
+        show_testimonials=block.show_testimonials
+      %}
+    {% when "blog-section" %}
+      {% include components/blog-section.html
+        title=block.title
+        description_html=block.description_html
+        link_url=block.link_url
+        show_posts=block.show_posts
+      %}
+    {% when "contact-form" %}
+      {% include components/contact-form.html
+        form_title=block.form_title
+        form_description=block.form_description
+        form_submission_email=block.form_submission_email
+        form_success_page=block.form_success_page
+        form_button_text=block.form_button_text
+      %}
+    {% when "newsletter" %}
+      {% include components/newsletter.html
+        newsletter_title=block.newsletter_title
+        newsletter_description=block.newsletter_description
+        newsletter_identifier=block.newsletter_identifier
+        newsletter_button=block.newsletter_button
+      %}
+    {% when "page-heading" %}
+      {% include components/page-heading.html
+        title=block.title
+        description=block.description
+      %}
+    {% when "page-image" %}
+      {% include components/page-image.html image=block.image image_alt=block.image_alt %}
+    {% when "content" %}
+      {% include components/content.html content_html=block.content_html %}
+    {% when "projects-list" %}
+      {% include components/projects-list.html show_projects=block.show_projects %}
+    {% when "posts-list" %}
+      {% include components/posts-list.html show_posts=block.show_posts %}
+    {% else %}
+      <!-- Unknown component: {{ block._bookshop_name }} -->
+  {% endcase %}
+{% endfor %}
+
+</div>
+{% endif %}

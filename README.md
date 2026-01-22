@@ -6,7 +6,7 @@ Increase the web presence of your brand with this configurable theme.
 ![Vonge template screenshot](_screenshot.png)
 
 Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
-The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
+The component library is provided as standard Jekyll includes and styles.
 
 Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
 
@@ -30,7 +30,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 
 Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.1, but should support newer versions as well.
 
-Install the dependencies for Bookshop:
+Install the node dependencies (if any):
 
 ~~~bash
 $ npm install
