@@ -5,12 +5,7 @@ Increase the web presence of your brand with this configurable theme.
 
 ![Vonge template screenshot](_screenshot.png)
 
-Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
-The component library is provided as standard Jekyll includes and styles.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
-
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
+Vonge is provided as a standard Jekyll template with component includes and styles.
 
 ## Features
 
@@ -22,8 +17,6 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 * Category pages
 * Testimonials
 * Portfolio
-* Live editing with [CloudCannon](http://cloudcannon.com/)
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * Search engine optimisation
 
 ## Develop
@@ -50,4 +43,4 @@ $ npm start
 
 
 > [!IMPORTANT]
-> When running locally, the pagination will not work. Deploy to CloudCannon to see successful pagination. 
+> When running locally, the pagination will not work. 

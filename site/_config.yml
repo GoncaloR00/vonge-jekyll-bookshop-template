@@ -8,9 +8,6 @@ exclude:
   - postcss.config.js
   - node_modules
 
-include:
-  - _cloudcannon
-
 collections_dir: 'collections'
 
 collections:
