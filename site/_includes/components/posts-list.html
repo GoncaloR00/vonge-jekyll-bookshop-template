@@ -1,0 +1,11 @@
+{% if include.show_posts %}
+<div class="container animate">
+  <div class="row" data-pagebreak="6">
+    {% for post in site.posts %}
+      {% include components/blog-card.html post=post %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include shared/pagination.html %}
+{% endif %}
